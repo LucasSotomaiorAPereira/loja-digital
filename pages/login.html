@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Página de Login</title>
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="../css/fontawesome-free-web/css/all.css">
+        <script src="../js/login.js"></script>
+    </head>
+
+    <body>
+
+        <div class="header">
+            <div class="logomarca">
+                <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+            </div>
+        </div>
+        
+        <div class="meio">
+            <form autocomplete="off" id="formLogin">
+                <div>
+                    <p class="texto">LOGIN</p>
+                    <input type="text" name="email" placeholder="Coloque seu email" id="email" required></input> <br>
+                    <input type="password" name="senha" placeholder="Coloque sua senha" id="senha" required></input> <br>
+                    <button type="button" onclick="login()" id="enviar">Enviar</button> <br><br>
+                    <p>Ainda nao é cliente? <a href="../pages/cadastro.html">Clique aqui</a> para se tornar um.</p>
+            </form>
+        </div>
+    </body>
+</html>

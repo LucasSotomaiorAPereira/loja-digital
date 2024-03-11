@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/cartao-credito.css">
+    <link rel="stylesheet" href="../css/fontawesome-free-web/css/all.css">
+    <script defer src="../js/credito.js"></script>
+    <title>Pagamento com catão de débito</title>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="logomarca">
+            <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+        </div>
+            
+        <div></div>
+
+        <div class="menu">
+            <a href="../pages/login.html" id="login"><button type="button" class="btnMenu" id="login">Login</button></a>
+            <a href="../pages/cadastro.html" id="aCadastro"><button type="button" class="btnMenu" id="cadastro">Cadastro</button></a>
+            <a href="../pages/carrinho.html"><button type="button" class="btnMenu">Carrinho</button></a>
+            <a href="../pages/admin.html"id="aAdm"><button type="button" class="btnMenu" id="btnAdm">Administração</button></a>
+            <div class="user" id="user">
+                <i class="fa-regular fa-user"></i>
+                <p id="username"></p>
+            </div>
+        </div>
+        <div class="menuIcon"><i class="fa-solid fa-bars menuBars" onclick="showMenu()"id="menuBars"></i></div>   
+    </div>
+    <div class="menuVertical" id="menuVertical">
+        <div class="user" id="user-vertical">
+            <i class="fa-regular fa-user"></i>
+            <p id="username-vertical"></p>
+        </div>
+        <a href="login.html" id="aLogin-vertical"><button type="button" class="btnMenu" id="login-vertical">Login</button></a>
+        <a href="cadastro.html" id="aCadastro-vertical"><button type="button" class="btnMenu" id="cadastro-vertical">Cadastro</button></a>
+        <a href="carrinho.html"><button type="button" class="btnMenu">Carrinho</button></a>
+        <a href="admin.html"id="aAdm-vertical"><button type="button" class="btnMenu" id="btnAdm-vertical">Administração</button></a>
+    </div>
+
+
+    <div class="painel">
+        <h1>Pagar com crédito</h1>
+        <input type="number" id="number" class="text" placeholder="Coloque o número do cartão..."/>
+        <input type="text" id="text" class="text" maxlength="7" placeholder="Coloque a data de vencimento..."/>
+        <input type="number" id="cvv" class="text" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="3" placeholder="Coloque o CVV..."/>
+        <input type="text" autocomplete="off" id="nome" class="text" placeholder="Coloque o nome do titular do cartão..."/>
+        <div class="container">
+        <button type="button" onclick="enviar()">Enviar</button>
+    </div>
+    </div>
+
+</body>
+
+</html>

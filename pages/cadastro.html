@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>Página de cadastro</title>
+        <link rel="stylesheet" href="../css/cadastro.css">
+        <link rel="stylesheet" href="../css/fontawesome-free-web/css/all.css">
+        <script src="../js/gravar-usuario.js"></script>
+    </head>
+
+    <body>
+
+    <div class="header">
+            <div class="logomarca">
+                <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+            </div>
+    </div>
+
+        <div class="meio">
+            <form autocomplete="off" id="formCadastro">
+                <div class="wide-div">
+                    <p class="texto">CADASTRO</p>
+                    <input class="input" type="text" name="nome" placeholder="Coloque seu nome" id="nome" required></input> <br>
+                    <input class="input" type="text" name="email" placeholder="Coloque seu email" id="email" required></input> <br>
+                    <input class="input" type="password" name="senha" placeholder="Coloque sua senha" id="senha" required></input> <br>
+                    <input class="input" type="password" placeholder="Confirme sua senha" name="confirmar_senha" id="confirmar_senha" required></input> <br>
+                    <button onclick="gravar()" type="button" id="enviar">Enviar</button> <br>
+                    <p>Já é cliente? <a href="../pages/login.html">Clique aqui</a> para entrar.</p>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

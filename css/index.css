@@ -1,0 +1,273 @@
+body {
+    margin: 0px;
+}
+
+.header {
+    display: grid;
+    height: 100px;
+    background-color: #919191;
+    border: solid 2px black;
+    align-items: center;
+    grid-template-columns: 25% 25% 50%;
+}
+
+.logomarca img {
+    margin: 10px;
+    height: 70px;
+    width: 90%;
+}
+
+.menu {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px;
+}
+
+.menu a {
+    margin: 0px 9px;
+    width: 100%;
+    height: 100%;
+}
+
+.btnMenu {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    color: red;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    box-shadow: 8px 9px 4px 1px rgb(6 4 4 / 12%);
+}
+
+.btnMenu:hover {
+    background-color: rgb(255, 128, 128);
+    color: white;
+}
+
+.btnMenu:active {
+    background-color: rgb(255, 95, 95);
+}
+
+.busca {
+    padding: 0px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5b6c6d;
+    border-radius: 25px;
+    width: 80%;
+    height: 50px;
+}
+
+.busca input {
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    height: 30px;
+    padding: 3px 15px;
+    margin: 8px;
+    outline: none;
+}
+
+.btnPesquisa i {
+    font-size: 30px;
+}
+
+.btnPesquisa {
+    height: 30px;
+    width: 30px;
+    padding-right: 15px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produto {
+    display: grid;
+    grid-template-rows: 60% 10% 10% 20%;
+    height: 200px;
+    width: 200px;
+    background-color: #ff0400;
+    margin: 25px;
+    border: 1px solid black;
+}
+
+.produto img {
+    width: 100%;
+    height: 100%;
+}
+
+.nomeProduto {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemProduto {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.preco {
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.adicionarCarrinho {
+    border: none;
+    cursor: pointer;
+}
+
+.adicionarCarrinho:hover
+{
+    background-color: lightgreen;
+}
+
+.removerProduto {
+    border: none;
+    cursor: pointer;
+}
+
+.removerProduto:hover
+{
+    background-color: lightcoral;
+}
+
+.user {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.user i {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 50px;
+    color: black;
+}
+
+.user p {
+    margin: 0px;
+    color: black;
+    font-family: Tahoma;
+}
+
+.menuVertical {
+    height: 100%;
+    width: 0px;
+    right: 0;
+    position: fixed;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+.menuVertical a {
+    color: white;
+    display: block;
+    height: 50px;
+    margin: 25px 20px;
+    text-decoration: none;
+}
+
+.menuVertical .menuBars {
+    position: absolute;
+    top: 0;
+}
+
+.separator{
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    body{
+        font-size: 4vw;
+    }
+    .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logomarca{
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .header {
+        grid-template-columns: 80% 20%;
+    }
+    .menuIcon {
+        justify-self: end;
+        z-index: 10;
+        margin-right: 20px;
+    }
+    .menuIcon i{
+        font-size: 80px;
+    }
+    .menuBars {
+        cursor: pointer;
+    }
+    .produto {
+        width: 60%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+    .header {
+        height: 200px;
+    }
+    .busca input{
+        font-size: 20px;
+    }
+    .adicionarCarrinho, .removerProduto{
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+    .menu {
+        display: none;
+    }
+    .menuBars {
+        cursor: pointer;
+    }
+    .menuIcon{
+        justify-self: end;
+        margin-right: 10px;
+        font-size: 2rem;
+    }
+    .menuIcon i{
+        font-size: 60px;
+    }
+    .busca{
+        width: 100%;
+    }
+    .header {
+        grid-template-columns: 25% 50% 25%;
+    }
+    .produto {
+        width: 300px;
+        height : 300px;
+    }
+}  

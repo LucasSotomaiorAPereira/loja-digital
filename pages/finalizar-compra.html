@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="../css/finalizar-compra.css">
+    <link rel="stylesheet" href="../css/fontawesome-free-web/css/all.css">
+    <script src="../js/finalizar-compra.js"></script>
+</head>
+<body>
+
+    <div class="header">
+
+        <div class="logomarca">
+            <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+        </div>
+            
+        <div></div>
+
+        <div class="menu">
+            <a href="../pages/login.html" id="login"><button type="button" class="btnMenu" id="login">Login</button></a>
+            <a href="../pages/cadastro.html" id="aCadastro"><button type="button" class="btnMenu" id="cadastro">Cadastro</button></a>
+            <a href="../pages/carrinho.html"><button type="button" class="btnMenu">Carrinho</button></a>
+            <a href="../pages/admin.html"id="aAdm"><button type="button" class="btnMenu" id="btnAdm">Administração</button></a>
+            <div class="user" id="user">
+                <i class="fa-regular fa-user"></i>
+                <p id="username"></p>
+            </div>
+        </div>
+
+        <div class="menuIcon"><i class="fa-solid fa-bars menuBars" onclick="showMenu()"id="menuBars"></i></div>   
+    </div>
+    <div class="menuVertical" id="menuVertical">
+        <div class="user" id="user-vertical">
+            <i class="fa-regular fa-user"></i>
+            <p id="username-vertical"></p>
+        </div>
+        <a href="login.html" id="aLogin-vertical"><button type="button" class="btnMenu" id="login-vertical">Login</button></a>
+        <a href="cadastro.html" id="aCadastro-vertical"><button type="button" class="btnMenu" id="cadastro-vertical">Cadastro</button></a>
+        <a href="carrinho.html"><button type="button" class="btnMenu">Carrinho</button></a>
+        <a href="admin.html"id="aAdm-vertical"><button type="button" class="btnMenu" id="btnAdm-vertical">Administração</button></a>
+    </div>
+
+
+    <div class="body">
+
+        
+            <div class="texto_total" id="texto_total">
+                Olá&#160<p id="cliente">cliente</p>, o total de sua compra é: R$
+            </div>
+
+            <div class="prdt">
+                Produtos:
+            </div>
+            <div class="lista_produtos" id="lista_produtos"></div>
+
+    </div>
+
+    <div class="botoes">
+        <a href="cartao-credito.html"><button class="button">Pagar com catão de crédito</button></a>
+        <a href="cartao-debito.html"><button class="button">Pagar com cartão de débito</button></a>
+        <a href="pix.html"><button class="button">Pagar com PIX</button></a>
+    </div>
+    
+    
+</body>
+</html>

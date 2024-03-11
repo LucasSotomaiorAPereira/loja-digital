@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/cadastro-admin.css">
+    <link rel="stylesheet" href="../css/fontawesome-free-web/css/all.css">
+    <script src="../js/gravar-admin.js"></script>
+    <title>Cadastrar Adminstrador</title>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="logomarca">
+            <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+        </div>
+            
+        <div></div>
+
+        <div class="menu">
+            <a href="../pages/login.html" id="login"><button type="button" class="btnMenu" id="login">Login</button></a>
+            <a href="../pages/cadastro.html" id="aCadastro"><button type="button" class="btnMenu" id="cadastro">Cadastro</button></a>
+            <a href="../pages/carrinho.html"><button type="button" class="btnMenu">Carrinho</button></a>
+            <a href="../pages/admin.html"id="aAdm"><button type="button" class="btnMenu" id="btnAdm">Administração</button></a>
+            <div class="user" id="user">
+                <i class="fa-regular fa-user"></i>
+                <p id="username"></p>
+            </div>
+        </div>
+        <div class="menuIcon"><i class="fa-solid fa-bars menuBars" onclick="showMenu()"id="menuBars"></i></div>   
+    </div>
+    <div class="menuVertical" id="menuVertical">
+        <div class="user" id="user-vertical">
+            <i class="fa-regular fa-user"></i>
+            <p id="username-vertical"></p>
+        </div>
+        <a href="login.html" id="aLogin-vertical"><button type="button" class="btnMenu" id="login-vertical">Login</button></a>
+        <a href="cadastro.html" id="aCadastro-vertical"><button type="button" class="btnMenu" id="cadastro-vertical">Cadastro</button></a>
+        <a href="carrinho.html"><button type="button" class="btnMenu">Carrinho</button></a>
+        <a href="admin.html"id="aAdm-vertical"><button type="button" class="btnMenu" id="btnAdm-vertical">Administração</button></a>
+    </div>
+
+
+    <div class="painel">
+        <h1>Adminstrador</h1>
+        <form id="formCadastro" onsubmit="return false">
+            <input id="nome" name="nome" type="text" placeholder="Coloque o nome do novo adminstrador...">
+            <input id="email" name="email" type="text" placeholder="Coloque o email...">
+            <input id="senha" name="senha" type="password" placeholder="Coloque a senha...">
+            <input id="confirmar-senha" name="confirmar_senha" type="password" placeholder="Confirme a senha...">
+            <button onclick="gravar()">Enviar</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

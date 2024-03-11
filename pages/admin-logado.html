@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/admin-logado.css">
+    <link rel="stylesheet" href="../css/fontawesome-free-web/css/all.css">
+    <script src="../js/admin-logado.js"></script>
+    <title>Painel do Adminstrador</title>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="logomarca">
+            <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+        </div>
+        <div></div>
+        <div class="menu">
+            <a href="../pages/login.html" id="login"><button type="button" class="btnMenu" id="login">Login</button></a>
+            <a href="../pages/cadastro.html" id="aCadastro"><button type="button" class="btnMenu" id="cadastro">Cadastro</button></a>
+            <a href="../pages/carrinho.html"><button type="button" class="btnMenu">Carrinho</button></a>
+            <a href="../pages/admin.html"id="aAdm"><button type="button" class="btnMenu" id="btnAdm">Administração</button></a>
+            <div class="user" id="user">
+                <i class="fa-regular fa-user"></i>
+                <p id="username"></p>
+            </div>
+        </div>
+        <div class="menuIcon"><i class="fa-solid fa-bars menuBars" onclick="showMenu()"id="menuBars"></i></div>   
+    </div>
+
+    <div id="menuVertical" class="menuVertical">
+        <div class="user" id="user-vertical">
+            <i class="fa-regular fa-user"></i>
+            <p id="username-vertical"></p>
+        </div>
+        <a href="login.html" id="aLogin-vertical"><button type="button" class="btnMenu" id="login-vertical">Login</button></a>
+        <a href="cadastro.html" id="aCadastro-vertical"><button type="button" class="btnMenu" id="cadastro-vertical">Cadastro</button></a>
+        <a href="carrinho.html"><button type="button" class="btnMenu">Carrinho</button></a>
+        <a href="admin.html"id="aAdm-vertical"><button type="button" class="btnMenu" id="btnAdm-vertical">Administração</button></a>
+    </div>
+
+
+    <div class="painel">
+        <h1>Painel do Adminstrador</h1>
+        <a href="cadastro_admin.html"><button>Cadastrar novo Adminstrador</button></a>
+
+        <a href="remover-produto.html"><button>Remover Produtos</button></a>
+
+        <a href="inserir-produto.html" id="teste"><button>Adicionar Produtos</button></a>
+    </div>
+
+</body>
+
+</html>
