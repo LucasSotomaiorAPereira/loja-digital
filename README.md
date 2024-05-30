@@ -1,3 +1,5 @@
+**Desenvolvimento de Loja Virtual**
+
 Este projeto consistiu no desenvolvimento de uma loja virutal, implementada como parte da disciplina de Programação WEB no segundo período do curso de Ciência da Computação. A metodologia de trabalho adotada foi a formação de equipes de três alunos, que colaboraram ao longo do semestre para a construção da aplicação.
 
 Tecnologias Empregadas:
